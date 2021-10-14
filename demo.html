@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div id="app">
+    <!-- <input type="text" v-model="message">
+    <p>{{message}}</p> -->
+    <textarea v-model="msgText" cols="30" rows="10"></textarea>
+    <button @click="watchMsg">测试</button>
+    <p>{{msgText2}}</p>
+  </div>
+</body>
+  <script src="./resources/plugin/vue.js"></script>
+  <script src="./resources/plugin/dx.min.js"></script>
+  <script src="./resources/plugin/encrypt.min.js"></script>
+  <script src="./resources/plugin/md5.js"></script>
+  <script src="./resources/plugin/jquery-3.2.1.min.js"></script>
+  <!-- import JavaScript -->
+  <script>
+    var vm = new Vue({
+      el: '#app',
+      // template: "<h1>{{message +'这是在template中的'}}</h1>",
+      // render: function(createElement) {
+      //     return createElement('h1', 'this is createElement')
+      // },
+      data: function() {
+        return {
+          msgText: {"K1":"VznSA4q1lCnAJymWWjHkUPS8oirSoN9AE10gT+Ql9kIwcULHmWdWyj0Z4XzsDZG80/AgLknJh1ACliFBx0JUnTfrbej90Z5ER7q0ylu//Kkot2Ec1RK6V5m7FrQKnf8K+LQr85+rqC3bD9bpyjsFsJRdB0MK10V4Znyw33/lvMI+o3K7cyDotYZsjXCCedFa/AhL66yhy92V2XJmTUKec3qN1n0mduQcrncchDi5c5OSBFJSaZ3Os6FbfsEJIQjPHQzVQwMclCxOBSqwUo5A1zskwo+TSmLZWEyCfaqlVcueQZTcQx9z1/bNXDTENzsoBeFFUYxsl2RwXbn50uYNc0zbAHpSCj2SADY2UgiuKnyHFMRwvdcp3KsVhFedMJTy3xGZpttKIyaa+naHg8K4Z89LovuhJ5KKNCgyOSuqmh+ZCD0NK/vW0y274ACnyvFm","K2":"3dc2568ce2dccdd051a78ec45e68a242"},
+          msgText2: ''
+        }
+      },
+
+      filters: {
+        statusName (index) {
+          return ['', '审核中', '已到帐', '已拒绝'][index]
+        }
+      },
+      // watch: {
+      //   msgText (newValue, oldValue) {
+      //     console.log(newValue, oldValue)
+      //     if (newValue.length > 6) {
+      //       this.watchMsg()
+      //     }
+      //   }
+      // },
+      computed: {
+        msgTotal () {
+          return (Number(this.msgText) + Number(this.msgText2)) || 0
+        }
+      },
+      methods: {
+        watchMsg () {
+          var data = JSON.parse(this.msgText)
+          // console.log(data)
+          var K1 = data.K1;
+          var K2 = data.K2;
+          var sign = md5(K1 + K1.slice(0, 2) + K1.charAt(K1.length / 2) + K1.slice(-2));
+          if(K2 == sign){
+              data = dx.decrypt(atob(K1));
+              console.log(JSON.parse(data));
+              var _data = JSON.parse(data);
+              this.msgText2 = data
+          }
+        }
+      }
+    })
+  </script>
+</html>

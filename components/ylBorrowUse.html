@@ -1,0 +1,15 @@
+<script type="text/x-template" id="yl-borrow-use-template">
+  <van-popup
+    :close-on-click-overlay="false"
+    v-model="borrowUse.visible" 
+    position="bottom">
+    <van-picker
+      title="借款用途"
+      show-toolbar
+      :columns="list"
+      value-key="name"
+      @cancel="borrowUse.visible = false"
+      @confirm="clickBorrowUse"
+    />
+  </van-popup>
+</script>

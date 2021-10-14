@@ -1,0 +1,33 @@
+<script type="text/x-template" id="yl-send-code-template">
+  <van-popup
+    v-model="sendCode.visible" 
+    position="bottom">
+    <div class="yl-dialog yl-send-code-dialog">
+      <p class="title">已向手机136****9999发送验证码</p>
+      <p class="intro">为了您的资金账户安全需短信验证</p>
+      <van-field
+        center
+        clearable
+        placeholder="请输入短信验证码"
+        class="send-code-input"
+        v-model="code">
+        <template #button>
+          <van-button 
+            plain 
+            type="info" 
+            @click="getSendCode" 
+            :disabled="disabled">
+            {{btnText}}
+          </van-button>
+        </template>
+      </van-field>
+      <div class="bottom-btn">
+        <van-button 
+          type="info" 
+          @click="saveSendCode">
+          确认
+        </van-button>
+      </div>
+    </div>
+  </van-popup>
+</script>

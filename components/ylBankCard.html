@@ -1,0 +1,34 @@
+<script type="text/x-template" id="yl-back-card-template">
+  <van-popup 
+    :close-on-click-overlay="false"
+    v-model="backCard.visible" 
+    position="bottom">
+    <div class="yl-dialog yl-back-card-dialog">
+      <div class="top flex">
+        <span></span>
+        <p class="dialog-title">选择银行卡</p>
+        <van-icon name="cross" @click="backCard.visible = false"/>
+      </div>
+      <ul class="card-list">
+        <li>
+          <div class="card-item">
+            <div class="flex">
+              <img src="/resources/img/bankicon/104100000004.png" alt="">
+              <span></span>
+            </div>
+            <p class="flex">
+              <span>招商银行</span>
+              <span>尾号2017储蓄卡</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="add-card">
+        <button class="flex">
+          <van-icon name="plus" />
+          <span>添加银行卡</span>
+        </button>
+      </div>
+    </div>
+  </van-popup>
+</script>

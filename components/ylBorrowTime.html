@@ -1,0 +1,15 @@
+<script type="text/x-template" id="yl-borrow-time-template">
+  <van-popup
+    :close-on-click-overlay="false"
+    v-model="borrowTime.visible" 
+    position="bottom">
+    <van-picker
+      title="借款期限"
+      show-toolbar
+      :columns="list"
+      value-key="name"
+      @cancel="borrowTime.visible = false"
+      @confirm="clickBorrowTime"
+    />
+  </van-popup>
+</script>

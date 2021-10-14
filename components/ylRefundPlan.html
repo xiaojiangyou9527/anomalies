@@ -1,0 +1,48 @@
+<script type="text/x-template" id="yl-refund-plan-template">
+  <van-popup 
+    :close-on-click-overlay="false"
+    v-model="repaymentPlan.visible" 
+    position="bottom">
+    <div class="yl-refund-plan-dialog">
+      <div class="top">
+        <div class="flex close">
+          <span></span>
+          <van-icon name="cross" @click="repaymentPlan.visible = false"/>
+        </div>
+        <div class="plan-info">
+          <p class="plan-all flex">
+            <span>应还总额</span>
+            <span>￥30856.50</span>
+          </p>
+          <p class="flex">
+            <span>本金</span>
+            <span>￥30000.00</span>
+          </p>
+          <p class="flex">
+            <span>利息</span>
+            <span>￥856.50</span>
+          </p>
+          <p class="flex">
+            <span>还款账户</span>
+            <span>招商银行(8890)</span>
+          </p>
+        </div>
+      </div>
+      <ul class="bottom">
+        <li class="flex">
+          <div class="head-icon">
+            <span></span>
+            <div></div>
+          </div>
+          <div class="info flex">
+            <p>
+              <span>2020年08月12日</span>
+              <span class="qixian">第1期</span>
+            </p>
+            <span>¥10285.50</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </van-popup>
+</script>

@@ -1,0 +1,492 @@
+.van-overlay {
+  background-color: rgba(0,0,0,.3);
+}
+/* 额度显示页面 */
+.yl-apply {
+  min-height: 100vh;
+  background: #ffffff;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.yl-apply .apply-head {
+  /* background-image: linear-gradient(-1deg, #FFFFFF 2%, #85D7FF 12%, #07ADFF 22%, #0A70FC 61%, #0060E5 87%); */
+  margin-bottom: 45px;
+  background: #F56C6C;
+}
+.yl-apply .apply-head-bg {
+  padding: 20px 0 10px 0;
+  justify-content: center;
+}
+.yl-apply .apply-head-bg .head-bg {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 170px;
+  /* background-image: url('../img/head_qiu.png'); */
+  background-size: cover;
+  min-height: 170px;
+  background-position: 50% 0px;
+  background-repeat: no-repeat no-repeat;
+}
+.yl-apply .apply-head-bg .icon-shixiao {
+  position: absolute;
+  width: 87px;
+  top: 10px;
+  right: -60px;
+}
+.yl-apply .edu-intro-title {
+  align-items: center;
+}
+.yl-apply .edu-intro-title span{
+  font-size: 14px;
+  color: #ffffff;
+  font-family: PingFangSC-Regular;
+  margin-right: 2px ;
+}
+.yl-apply .edu-intro-title img {
+  display: block;
+  width: 16px;
+}
+.yl-apply .edu-intro-num {
+  font-size: 28px;
+  color: #FFFFFF;
+  letter-spacing: 0.7125px;
+  margin: 10px 0 32px 0;
+}
+.yl-apply .edu-intro-no{
+  color: #76F0FF;
+  font-size: 18px;
+  margin: 15px 0 32px 0;
+}
+.yl-apply .edu-intro-num span{
+  font-size: 16px;
+  color: #ffffff;
+}
+.yl-apply .intro-sx-middle {
+  padding-bottom: 35px;
+}
+.yl-apply .intro-sx-middle p{
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 24px;
+}
+.yl-apply .intro-sx-refuse p{
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 24px;
+}
+.yl-apply .intro-sx-refuse .refuse-text {
+  font-size: 12px;
+  color: #0078FA;
+  letter-spacing: 0.75px;
+  text-align: center;
+  line-height: 22px  ;
+}
+.yl-apply .intro-sx-success {
+  padding-bottom: 20px;
+}
+.yl-apply .intro-sx-success p {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.yl-apply .intro-sx-success .success-text {
+  font-size: 12px;
+  color: #0078FA;
+  text-align: center;
+  margin-top: 10px;
+}
+.yl-apply .other-entrance {
+  justify-content: space-around;
+  margin-top: 32px ;
+  padding: 0 20px;
+}
+.yl-apply .record-entrance {
+  align-items: center;
+}
+.yl-apply .record-entrance img {
+  height: 32px;
+  margin-right: 3px;
+}
+.yl-apply .record-entrance p {
+  font-size: 14px;
+  color: #2B2B39;
+}
+.yl-apply .other-entrance span {
+  color: rgba(0,0,0,0.28);
+}
+.yl-apply .card-entrance {
+  align-items: center;
+}
+.yl-apply .card-entrance img {
+  height: 32px;
+  margin-right: 3px;
+}
+.yl-apply .card-entrance p {
+  font-size: 14px;
+  color: #2B2B39;
+}
+.yl-apply .hyd-logo {
+  flex-direction: column;
+  align-items: center;
+}
+.yl-apply .hyd-logo img {
+  width: 82px;
+  display: block;
+}
+.yl-apply .hyd-logo p{
+  padding: 8px 0 30px 0;
+  font-size: 12px;
+  color: rgba(0,0,0,0.28);
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* 借款页面 */
+.yl-borrow {
+  min-height: 100vh;
+  /* font-family: PingFangSC-Regular; */
+}
+.yl-borrow-gap {
+  height: 10px;
+  background: #f4f4f4;
+}
+.yl-borrow .borrow-price {
+  padding: 10px 20px;
+  background: #ffffff;
+}
+.yl-borrow .borrow-price .info {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.yl-borrow .borrow-price .title {
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+}
+.yl-borrow .borrow-price .intro {
+  font-size: 12px;
+  color: #9B9B9B;
+  letter-spacing: 0;
+}
+.yl-borrow .borrow-price .info span {
+  color: #333;
+  font-size: 30px;
+  
+}
+.yl-borrow .borrow-price .info input {
+  flex: 1;
+  background:none;  
+	outline:none;  
+  border:none;
+  font-size: 30px;
+  padding: 0 2px;
+  width: 200px;
+}
+.yl-borrow .borrow-price .info input::placeholder {
+font-size: 18px;
+color: #ccc;
+}
+.yl-borrow .borrow-price .info input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #ccc;
+}
+.yl-borrow .borrow-price .info img {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+.yl-borrow .yl-borrow-detail {
+  background: #fff;
+}
+.yl-borrow .yl-borrow-detail .yl-borrow-list {
+  margin: 0 20px;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+.yl-borrow .yl-borrow-detail .yl-borrow-list:not(:first-child){
+  border-top: 1px solid #e5e5e5;
+}
+.yl-borrow .yl-borrow-detail .yl-borrow-list .title {
+  font-size: 16px;
+  color: #4A4A4A;
+}
+.yl-borrow .yl-borrow-detail .yl-borrow-list p {
+  color: #22222C;
+  font-size: 16px;
+  
+}
+.yl-borrow .yl-borrow-detail .yl-borrow-list i {
+  margin-left: 8px;
+  color: #ccc;
+  font-size: 16px;
+}
+.yl-borrow .yl-borrow-annotation {
+  padding: 0 20px;
+  
+}
+.yl-borrow .yl-borrow-annotation i {
+  color: rgba(0,0,0,0.40);
+}
+.yl-borrow .yl-borrow-annotation span {
+  color: rgba(0,0,0,0.40);
+  padding-left: 5px;
+}
+.yl-borrow .yl-borrow-info {
+  position: relative;
+  line-height: 1.2;
+}
+.yl-borrow .yl-borrow-info .van-checkbox {
+  position: absolute;
+  left: 20px;
+  top: 2px;
+}
+.yl-borrow .yl-borrow-info p {
+  padding: 0 20px 0 40px;
+  color: rgba(0,0,0,0.40);
+}
+.yl-borrow .yl-borrow-info .info-rukou {
+  color: #1D8AFF;
+}
+.yl-borrow .yl-borrow-foot {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+.yl-borrow .yl-borrow-foot button{
+  color: #FFFFFF;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  border-radius: 4px;
+  background-image: linear-gradient(-135deg, #1D8AFF 0%, #1D8AFF 53%, #00BDFF 100%);
+  background-color: #0078FA;
+}
+.yl-borrow-rate-dialog {
+  width: 250px;
+  border-radius: 4px;
+}
+.yl-borrow-rate-dialog .dialog-info{
+  padding: 24px 16px;
+}
+.yl-borrow-rate-dialog .dialog-info p {
+  font-size: 14px;
+  color: #22222C;
+  line-height: 17px;
+}
+.yl-borrow-rate-dialog .dialog-info span {
+  color: #1D8AFF;
+}
+.yl-borrow-rate-dialog .dialog-info .title{
+  font-size: 18px;
+  color: #22222C;
+  text-align: center;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.yl-borrow-rate-dialog .foot-btn {
+  margin: 0 10px;
+  border-top: 1px solid #e5e5e5;
+}
+.yl-borrow-rate-dialog .foot-btn button {
+  width: 100%;
+  color: #1D8AFF;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/* 公共底部dialog顶部 */
+.yl-dialog .top {
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.yl-dialog .top span {
+  width: 18px;
+}
+.yl-dialog .top .van-icon {
+  font-size: 18px;
+  color: #495165;
+  font-weight: 600;
+}
+.yl-dialog .top .dialog-title {
+  font-size: 16px;
+  color: #22222C;
+}
+/* 还款计划 */
+.yl-refund-plan-dialog .top {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.yl-refund-plan-dialog .top .close{
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.yl-refund-plan-dialog .top .close .van-icon {
+  font-size: 14px;
+  color: #495165;
+  font-weight: 600;
+}
+.yl-refund-plan-dialog .top .plan-info {
+  padding: 0 20px;
+}
+.yl-refund-plan-dialog .top .plan-info p {
+  justify-content: space-between;
+  color: #9B9B9B;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.yl-refund-plan-dialog .top .plan-info .plan-all{
+  color: #22222C;
+  font-size: 16px;
+}
+.yl-refund-plan-dialog .bottom {
+  padding: 20px;
+  max-height: 165px;
+  overflow-y: auto;
+}
+.yl-refund-plan-dialog .bottom .head-icon {
+  width: 10px;
+  height: 45px;
+  margin-right: 6px;
+  padding-top: 2px;
+  position: relative;
+}
+.yl-refund-plan-dialog .bottom .head-icon div {
+  position: absolute;
+  height: 30px;
+  left: 4px;
+  top: 13px;
+  border-right: 1px dashed #e5e5e5;
+}
+.yl-refund-plan-dialog .bottom li:last-child .head-icon {
+  height: 10px;
+}
+.yl-refund-plan-dialog .bottom li:last-child .head-icon div {
+  border-right: 0px dashed #e5e5e5;
+}
+.yl-refund-plan-dialog .bottom .head-icon span {
+  border: 3px solid #0470F1;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+}
+.yl-refund-plan-dialog .bottom .info {
+  flex: 1;
+  justify-content: space-between;
+}
+.yl-refund-plan-dialog .bottom span {
+  color: #22222C;
+  font-weight: 600;
+}
+.yl-refund-plan-dialog .bottom .qixian {
+  background: #0470F1;
+  color: #fff; 
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-weight: 400;
+}
+/* 底部弹出银行卡列表 */
+.yl-back-card-dialog .card-list {
+  max-height: 200px;
+  padding: 15px;
+  overflow-y: auto;
+}
+.yl-back-card-dialog .card-list li {
+  margin-top: 10px;
+}
+.yl-back-card-dialog .card-list li:first-child {
+  margin-top: 0;
+}
+.yl-back-card-dialog .card-list .card-item {
+  background-image: url('../img/card_bg.png');
+  background-size: cover;
+  background-size: 100% 100%;
+  height: 120px;
+  padding: 16px;
+  background-repeat: no-repeat no-repeat;
+}
+.yl-back-card-dialog .card-list img {
+  display: block;
+  height: 24px;
+}
+.yl-back-card-dialog .card-list p {
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.yl-back-card-dialog .card-list span {
+  color:#666666;
+  font-size: 18px;
+}
+.yl-back-card-dialog .add-card {
+  border-top: 1px solid #e5e5e5;
+}
+.yl-back-card-dialog .add-card button {
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+}
+.yl-back-card-dialog .add-card button span {
+  line-height: 50px;
+  color: #22222C;
+}
+.yl-back-card-dialog .add-card button i {
+  margin-right: 5px;
+  color: #22222C;
+}
+/* 借款用途 */
+.yl-back-card-dialog .use-list li {
+  text-align: center;
+  margin: 0 10px;
+  line-height: 32px;
+  font-size: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.yl-back-card-dialog .use-list li:last-child {
+  border-bottom: 0px solid #e5e5e5;
+}
+.yl-send-code-dialog {
+  padding-top: 20px;
+}
+.yl-send-code-dialog .title{
+  font-size: 18px;
+  color: #4A4A4A;
+  padding: 0 20px;
+}
+.yl-send-code-dialog .intro {
+  font-size: 14px;
+  color: #4A4A4A;
+  margin-top: 4px;
+  padding: 0 20px;
+}
+.yl-send-code-dialog .send-code-input {
+  padding: 15px 20px;
+  margin: 15px 0;
+}
+.yl-send-code-dialog .send-code-input::after {
+  border-bottom: 0px solid #ebedf0;
+}
+.yl-send-code-dialog .send-code-input .van-cell__value {
+  border: 1px solid #e5e5e5;
+  padding-left: 8px;
+}
+.yl-send-code-dialog .send-code-input .van-button--info {
+  border: 0px;
+}
+.yl-send-code-dialog .bottom-btn .van-button--info {
+  width: 100%;
+}
