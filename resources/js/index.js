@@ -411,36 +411,31 @@ window.onload = function() {
         smooth: true,
         symbolSize: 1,
         itemStyle: {
-          normal: {
-            color: '#04a6e9',
-            opacity: 0
-          },
-          emphasis: {
-            borderColor: '#04a6e9',
-            opacity: 1
-          }
+          color: '#04a6e9',
+          opacity: 0
+        },
+        emphasis: {
+          borderColor: '#04a6e9',
+          opacity: 1
         },
         lineStyle: {
-          normal: {
-            color: '#04a6e9',
-            width: 1
-          }
+          color: '#04a6e9',
+          width: 1
         },
         areaStyle: {
-          normal: {
-            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-              offset: 0,
-              color: '#04a6e9'
-            }, {
-              offset: 1,
-              color: '#fff'
-            }], false)
-          }
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: '#04a6e9'
+          }, {
+            offset: 1,
+            color: '#fff'
+          }], false)
         },
         data: []
       }
     ]
   }
+
   var barOptions = {
     title: {
       left: '2%',
@@ -492,15 +487,13 @@ window.onload = function() {
       type: 'bar',
       barMaxWidth: 35,
       itemStyle: {
-        normal: {
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-            offset: 0,
-            color: '#3ddcf2'
-          }, {
-            offset: 1,
-            color: '#04a6e9'
-          }])
-        }
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+          offset: 0,
+          color: '#3ddcf2'
+        }, {
+          offset: 1,
+          color: '#04a6e9'
+        }])
       }
     }]
   }
